@@ -1,118 +1,96 @@
 const menu = [
   {
-    category: "Entrées",
+    category: "Menu du jour",
     items: [
       {
-        name: "Alloco piment doux",
-        description: "Bananes plantain dorées, oignons croquants, piment maison.",
+        name: "Attiéké demi poulet",
+        description: "Demi-poulet servi avec attiéké et condiments maison.",
+        price: "5 000",
+        image: "assets/attiéképoulet.jpeg",
+        position: "50% 50%",
+      },
+      {
+        name: "Attiéké poisson",
+        description: "Poisson servi avec attiéké, légumes frais et piment.",
+        price: "à partir de 5 000",
+        image: "assets/Attiéké Poisson.jpeg",
+        position: "50% 50%",
+      },
+      {
+        name: "Croupillon de dinde attiéké",
+        description: "Croupillon de dinde accompagné d'attiéké et sauce maison.",
+        price: "6 500",
+        image: "assets/Attieke croupion de dinde_.jpeg",
+        position: "50% 50%",
+      },
+      {
+        name: "Foutou graine",
+        description: "Foutou servi avec sauce graine onctueuse.",
+        price: "5 000",
+        image: "assets/foutou graine.jpeg",
+        position: "50% 50%",
+      },
+      {
+        name: "Foutou gombo",
+        description: "Foutou accompagné d'une sauce gombo généreuse.",
+        price: "5 000",
+        image: "assets/foutou gombo.jpeg",
+        position: "50% 50%",
+      },
+      {
+        name: "Placali gombo",
+        description: "Placali frais servi avec sauce gombo.",
+        price: "5 000",
+        image: "assets/placali gombo.jpeg",
+        position: "50% 50%",
+      },
+      {
+        name: "Placali graine",
+        description: "Placali frais servi avec sauce graine.",
+        price: "5 000",
+        image: "assets/placali graine.jpeg",
+        position: "50% 50%",
+      },
+      {
+        name: "Riz gombo",
+        description: "Riz accompagné d'une sauce gombo savoureuse.",
+        price: "5 000",
+        image: "assets/riz gombo.webp",
+        position: "50% 50%",
+      },
+      {
+        name: "Riz graine",
+        description: "Riz servi avec sauce graine parfumée.",
+        price: "5 000",
+        image: "assets/riz graine.jpeg",
+        position: "50% 50%",
+      },
+      {
+        name: "Alloco",
+        description: "Bananes plantain dorées avec piment doux.",
         price: "2 000",
-        image: "assets/aloco.jpeg",
+        image: "assets/alloco.jpeg",
         position: "50% 52%",
       },
       {
-        name: "Wings braisés",
-        description: "Ailes marinées aux épices, sauce verte et citron.",
-        price: "3 000",
-        image: "assets/Wings braisés.jpeg",
-        position: "50% 48%",
+        name: "Poisson frit",
+        description: "Poisson frit servi avec accompagnement et condiments.",
+        price: "à partir de 5 000",
+        image: "assets/poisson frit.jpeg",
+        position: "50% 50%",
       },
-    ],
-  },
-  {
-    category: "Plats",
-    items: [
       {
-        name: "Attiéké poisson",
-        description: "Poisson braisé, attiéké moelleux, légumes frais.",
+        name: "Choukouya attiéké demi",
+        description: "Choukouya servi avec attiéké et sauce maison.",
         price: "5 000",
-        image: "assets/atieke poisson.jpeg",
-        position: "50% 46%",
-      },
-      {
-        name: "Garba complet",
-        description: "Attiéké, thon, oignons, piment et cube signature.",
-        price: "3 500",
-        image: "assets/garba.jpeg",
+        image: "assets/choukouya.jpeg",
         position: "50% 50%",
       },
       {
-        name: "Foutou sauce graine",
-        description: "Foutou souple, sauce graine onctueuse et viande tendre.",
-        price: "5 500",
-        image: "assets/Foutou.jpeg",
-        position: "50% 50%",
-      },
-      {
-        name: "Placali sauce rouge",
-        description: "Placali frais, sauce tomate épicée et poisson fumé.",
-        price: "4 500",
-        image: "assets/placali.jpeg",
-        position: "50% 48%",
-      },
-      {
-        name: "Sauce graine",
-        description: "Sauce graine parfumée, riz ou foutou au choix.",
+        name: "Garba",
+        description: "Attiéké, thon, oignons et piment.",
         price: "4 000",
-        image: "assets/saucegraine.jpeg",
-        position: "50% 48%",
-      },
-      {
-        name: "Sauce rouge",
-        description: "Sauce tomate relevée, légumes et accompagnement au choix.",
-        price: "3 500",
-        image: "assets/saucerouge.jpeg",
-        position: "50% 50%",
-      },
-      {
-        name: "Kedjenou",
-        description: "Poulet mijoté doucement avec tomate, oignons et épices.",
-        price: "4 500",
-        image: "assets/Kedjenou.jpeg",
-        position: "50% 50%",
-      },
-    ],
-  },
-  {
-    category: "Grillades",
-    items: [
-      {
-        name: "Poulet braisé",
-        description: "Demi-poulet grillé, frites ou attiéké, sauce maison.",
-        price: "4 000",
-        image: "assets/Poulet braisé.jpeg",
-        position: "50% 50%",
-      },
-      {
-        name: "Poisson braisé",
-        description: "Poisson entier braisé, légumes croquants et piment vert.",
-        price: "6 000",
-        image: "assets/poisson braisé.jpeg",
-        position: "50% 48%",
-      },
-      {
-        name: "Poisson braisé spécial",
-        description: "Poisson braisé, garniture généreuse et sauce signature.",
-        price: "6 500",
-        image: "assets/poissonbraisé.jpeg",
-        position: "50% 48%",
-      },
-      {
-        name: "Brochettes de boeuf",
-        description: "Viande marinée, légumes grillés, piment vert.",
-        price: "3 500",
-        image: "assets/Brochettes de boeuf.jpeg",
-        position: "50% 50%",
-      },
-    ],
-  },
-  {
-    category: "Desserts",
-    items: [
-      {
-        name: "Dégué frais",
-        description: "Yaourt onctueux, mil, vanille et noix de muscade.",
-        price: "1 500",
-        image: "assets/Dégué frais.jpeg",
+        image: "assets/garba attiéké.jpeg",
         position: "50% 50%",
       },
     ],
@@ -122,14 +100,14 @@ const menu = [
     items: [
       {
         name: "Jus de bissap",
-        description: "Bissap frais, menthe, gingembre doux.",
+        description: "Bissap frais, menthe et gingembre doux.",
         price: "1 000",
         image: "assets/Jus de bissap.jpeg",
         position: "50% 50%",
       },
       {
         name: "Gnamakoudji",
-        description: "Gingembre pressé, citron, sucre équilibré.",
+        description: "Gingembre pressé, citron et sucre équilibré.",
         price: "1 000",
         image: "assets/Gnamakoudji.jpeg",
         position: "50% 50%",
@@ -192,9 +170,9 @@ function renderMenu() {
                   <article class="menu-card">
                     <div class="dish-photo" style="${item.image ? `--image: url('${item.image}');` : ""} --pos: ${item.position}"></div>
                     <div class="menu-card-content">
-                      <h3>${item.name}</h3>
-                      <p class="${item.name === "Sauce rouge" ? "text-white" : ""}">${item.description}</p>
                       <strong class="price">${item.price}<small>FCFA</small></strong>
+                      <h3 class="${["Placali gombo", "Choukouya attiéké demi"].includes(item.name) ? "text-white" : ""}">${item.name}</h3>
+                      <p class="${["Placali gombo", "Choukouya attiéké demi"].includes(item.name) ? "text-white" : ""}">${item.description}</p>
                     </div>
                   </article>
                 `,
@@ -242,3 +220,11 @@ document.addEventListener("click", (event) => {
 
 renderTabs();
 renderMenu();
+
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("/service-worker.js").catch(() => {
+      // Offline support is optional; the menu still works online if registration fails.
+    });
+  });
+}

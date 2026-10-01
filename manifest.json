@@ -1,0 +1,24 @@
+{
+  "name": "La Case Ivoirienne",
+  "short_name": "La Case",
+  "description": "Menu digital de La Case Ivoirienne.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#fffaf1",
+  "theme_color": "#167a3a",
+  "icons": [
+    {
+      "src": "assets/logocaseivoirienne.jpeg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/logocaseivoirienne.jpeg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any"
+    }
+  ]
+}

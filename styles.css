@@ -386,7 +386,7 @@ input {
   height: 62%;
   border-bottom: 8px solid rgba(255, 255, 255, 0.72);
   border-radius: 0 0 68px 68px;
-  background-image: var(--image, url("assets/food-menu-flyer.jpeg"));
+  background-image: var(--image, url("assets/logocaseivoirienne.jpeg"));
   background-position: var(--pos, 50% 50%);
   background-size: cover;
   box-shadow: 0 16px 24px rgba(37, 16, 0, 0.2);
@@ -431,32 +431,31 @@ input {
   color: var(--muted);
 }
 
+.menu-card h3.text-white,
 .menu-card p.text-white {
   color: #fff;
 }
 
 .price {
-  position: absolute;
-  left: 18px;
-  top: 18px;
-  display: grid;
-  min-width: 76px;
-  min-height: 76px;
-  place-items: center;
-  padding: 10px;
-  color: var(--orange);
+  display: inline-flex;
+  width: fit-content;
+  align-items: baseline;
+  gap: 4px;
+  margin-bottom: 8px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  color: var(--orange-dark);
   background: #fff8d8;
-  clip-path: polygon(50% 0%, 60% 12%, 76% 7%, 82% 23%, 98% 28%, 92% 45%, 100% 58%, 85% 67%, 83% 84%, 65% 84%, 51% 100%, 38% 85%, 20% 89%, 16% 71%, 1% 62%, 10% 47%, 3% 30%, 21% 25%, 28% 9%, 43% 14%);
   font-family: "Archivo Black", Impact, sans-serif;
-  font-size: 1.05rem;
-  line-height: 0.9;
+  font-size: 1rem;
+  line-height: 1;
   text-align: center;
 }
 
 .price small {
-  display: block;
+  display: inline;
   font-family: Inter, sans-serif;
-  font-size: 0.55rem;
+  font-size: 0.5rem;
   font-weight: 900;
 }
 
@@ -499,7 +498,8 @@ input {
   }
 
   .items-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
   }
 }
 
@@ -586,42 +586,61 @@ input {
     padding-bottom: 14px;
   }
 
+  .items-grid {
+    gap: 10px;
+  }
+
   .menu-card {
-    min-height: 380px;
-    border-radius: 0 54px 0 54px;
+    min-height: 260px;
+    border-radius: 0 30px 0 30px;
   }
 
   .menu-card:nth-child(2n) {
-    border-radius: 54px 0 54px 0;
+    border-radius: 30px 0 30px 0;
   }
 
   .dish-photo {
     inset: 0 0 auto 0;
     width: 100%;
-    height: 58%;
+    height: 50%;
     border-right: 0;
-    border-bottom: 8px solid rgba(255, 255, 255, 0.72);
+    border-bottom: 5px solid rgba(255, 255, 255, 0.72);
     border-left: 0;
-    border-radius: 0 0 54px 54px;
-    box-shadow: 0 16px 22px rgba(37, 16, 0, 0.18);
+    border-radius: 0 0 30px 30px;
+    box-shadow: 0 12px 18px rgba(37, 16, 0, 0.18);
   }
 
   .menu-card-content {
     width: 100%;
-    min-height: 380px;
-    padding: 232px 18px 18px;
+    min-height: 260px;
+    padding: 140px 10px 12px;
   }
 
-  .menu-card h3,
+  .menu-card h3 {
+    max-width: 100%;
+    font-size: clamp(0.95rem, 4.5vw, 1.2rem);
+    line-height: 0.96;
+  }
+
   .menu-card p {
-    max-width: calc(100% - 92px);
+    display: -webkit-box;
+    max-width: 100%;
+    margin-top: 7px;
+    overflow: hidden;
+    font-size: 0.74rem;
+    line-height: 1.22;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
   }
 
   .price {
-    top: auto;
-    right: 14px;
-    bottom: 18px;
-    left: auto;
+    margin-bottom: 6px;
+    padding: 5px 8px;
+    font-size: 0.72rem;
+  }
+
+  .price small {
+    font-size: 0.38rem;
   }
 
   .footer {
@@ -653,18 +672,30 @@ input {
     font-size: 2rem;
   }
 
+  .items-grid {
+    gap: 8px;
+  }
+
+  .menu-card {
+    min-height: 238px;
+  }
+
+  .menu-card-content {
+    min-height: 238px;
+    padding: 128px 9px 11px;
+  }
+
   .menu-card h3 {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
   }
 
   .menu-card p {
-    font-size: 0.86rem;
+    font-size: 0.68rem;
   }
 
   .price {
-    min-width: 68px;
-    min-height: 68px;
-    font-size: 0.94rem;
+    padding: 5px 7px;
+    font-size: 0.66rem;
   }
 }
 

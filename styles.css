@@ -39,6 +39,15 @@ input {
   font: inherit;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}
+
 .hero {
   min-height: 92svh;
   overflow: hidden;
@@ -431,6 +440,11 @@ input {
   color: var(--muted);
 }
 
+.menu-card:nth-child(3n) h3,
+.menu-card:nth-child(3n) p {
+  color: #fff;
+}
+
 .menu-card h3.text-white,
 .menu-card p.text-white {
   color: #fff;
@@ -470,23 +484,85 @@ input {
 }
 
 .footer {
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(180px, 0.9fr) minmax(180px, 0.8fr);
   align-items: center;
-  justify-content: space-between;
-  gap: 18px;
-  padding: 22px 0 34px;
-  color: var(--green-dark);
+  gap: 24px;
+  margin-top: 20px;
+  margin-bottom: 24px;
+  padding: 24px;
+  border: 2px solid rgba(22, 122, 58, 0.14);
+  border-radius: 8px;
+  color: var(--ink);
+  background: rgba(255, 240, 189, 0.82);
+  box-shadow: var(--shadow);
 }
 
-.footer div {
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer-brand img {
+  width: 64px;
+  height: 64px;
+  flex: 0 0 auto;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: var(--shadow);
+}
+
+.footer-brand div,
+.footer-contact {
   display: grid;
-  gap: 4px;
+  gap: 6px;
+}
+
+.footer strong {
+  color: var(--green-dark);
+  font-family: "Archivo Black", Impact, sans-serif;
+  font-size: 1.2rem;
+  line-height: 1;
+  text-transform: uppercase;
 }
 
 .footer span,
-.footer a {
+.footer-contact a {
   color: var(--muted);
   font-weight: 800;
+}
+
+.footer-contact {
+  margin: 0;
+  font-style: normal;
+}
+
+.footer-social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.footer-social a {
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding: 0;
+  color: #fff;
+  background: var(--green);
+}
+
+.footer-social svg {
+  width: 22px;
+  height: 22px;
+  fill: currentColor;
+  stroke: none;
 }
 
 
@@ -644,8 +720,12 @@ input {
   }
 
   .footer {
+    grid-template-columns: 1fr;
     align-items: flex-start;
-    flex-direction: column;
+  }
+
+  .footer-social {
+    justify-content: flex-start;
   }
 }
 
@@ -698,4 +778,3 @@ input {
     font-size: 0.66rem;
   }
 }
-

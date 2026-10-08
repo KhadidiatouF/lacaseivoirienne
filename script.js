@@ -96,21 +96,112 @@ const menu = [
     ],
   },
   {
+    category: "Brochettes",
+    items: [
+      { name: "Brochettes de viande de bœuf", description: "Brochettes grillées et assaisonnées maison.", price: "5 000", image: "assets/Brochettes/brochettes de viande de boeuf.jpeg" },
+      { name: "Brochettes de blanc de poulet", description: "Morceaux de poulet tendres, grillés à la braise.", price: "5 000", image: "assets/Brochettes/brochettes de blanc de poulet.jpeg" },
+      { name: "Brochettes de lotte", description: "Brochettes de lotte marinées et grillées.", price: "5 000", image: "assets/Brochettes/brochettes de lotte.jpeg" },
+      { name: "Brochettes de gambas", description: "Gambas grillées et parfumées aux épices maison.", price: "6 000", image: "assets/Brochettes/brochettes gambas.jpeg" },
+    ],
+  },
+  {
+    category: "Nos volailles",
+    items: [
+      { name: "Poulet braisé - le demi", description: "Poulet braisé à la ivoirienne, tendre et fumé.", price: "5 000", image: "assets/Volailles/poulet braisé.jpeg" },
+      { name: "Dinde braisée", description: "Dinde braisée aux épices maison.", price: "7 000", image: "assets/Volailles/dinde braisé.jpg" },
+      { name: "Caille braisée", description: "Caille braisée, parfumée et généreuse.", price: "12 000", image: "assets/Volailles/caille braisé.jpeg" },
+      { name: "Pigeon braisé", description: "Pigeon braisé aux saveurs de la maison.", price: "15 000", image: "assets/Volailles/pigeon braisé.jpeg" },
+    ],
+  },
+  {
+    category: "Nos poissons",
+    items: [
+      { name: "Poisson carpe braisé / frit", description: "Carpe préparée braisée ou frite.", price: "à partir de 5 000", image: "assets/poissons /carpe braisé.jpeg" },
+      { name: "Poisson thon frit", description: "Thon frit, croustillant et généreux.", price: "4 000", image: "assets/poissons /thon frit.jpeg" },
+      { name: "Sol braisé ou frit", description: "Poisson sol préparé braisé ou frit.", price: "10 000", image: "assets/poissons /sol.jpeg" },
+      { name: "Dorade frite ou braisée", description: "Dorade préparée selon votre choix.", price: "à partir de 6 000", image: "assets/poissons /dorade braisé.jpeg" },
+    ],
+  },
+  {
+    category: "Nos sauces quotidiennes",
+    items: [
+      { name: "Sauce graine", description: "Sauce graine ivoirienne préparée maison.", price: "5 000", image: "assets/Sauces/Sauce Graine.jpeg" },
+      { name: "Sauce gombo", description: "Sauce gombo généreuse et parfumée.", price: "5 000", image: "assets/Sauces/Sauce Gombo avec du gari.jpeg" },
+      { name: "Sauce aubergines", description: "Sauce aux aubergines préparée maison.", price: "5 000", image: "assets/Sauces/sauce aubergine.avif" },
+      { name: "Sauce arachide", description: "Sauce arachide onctueuse et savoureuse.", price: "5 000", image: "assets/Sauces/sauce arachide.jpg" },
+    ],
+  },
+  {
+    category: "Choukouya (Dibi à l’ivoirienne)",
+    items: [
+      { name: "Choukouya poulet - le demi", description: "Poulet grillé façon choukouya, avec oignons et épices.", price: "5 000", image: "assets/Choukouya/Choukouya Poulet.jpeg" },
+      { name: "Choukouya mouton", description: "Mouton grillé façon choukouya.", price: "5 000", image: "assets/Choukouya/Choukouya mouton.jpeg" },
+    ],
+  },
+  {
+    category: "Nos soupes",
+    items: [
+      { name: "Kedjenou de poulet - le demi", description: "Poulet mijoté dans une sauce kedjenou parfumée.", price: "6 000", image: "assets/Soupes/kedjenou poulet.jpeg" },
+      { name: "Kedjenou de poisson", description: "Poisson mijoté aux légumes et épices ivoiriennes.", price: "6 000", image: "assets/Soupes/kedjenou de poisson.jpeg" },
+      { name: "Kedjenou de cabri (chèvre)", description: "Cabri mijoté façon kedjenou.", price: "7 000", image: "assets/Soupes/kedjenou de cabri.jpeg" },
+      { name: "Kedjenou de mouton", description: "Mouton mijoté dans une sauce relevée.", price: "7 000", image: "assets/Soupes/kedjenou de mouton.avif" },
+      { name: "Kedjenou de pattes de bœuf", description: "Pattes de bœuf mijotées et fondantes.", price: "6 000", image: "assets/Soupes/kedjenou pate de boeuf.jpeg" },
+      { name: "Soupe de pattes de bœuf", description: "Soupe généreuse aux pattes de bœuf.", price: "5 000", image: "assets/Soupes/soupe pate de boeuf.jpeg" },
+    ],
+  },
+  {
+    category: "Nos accompagnements",
+    items: [
+      { name: "Foutou banane", description: "Accompagnement traditionnel ivoirien.", price: "2 000", image: "assets/accompagnements/foutou banane.jpeg" },
+      { name: "Foutou igname", description: "Foutou d’igname préparé maison.", price: "2 000", image: "assets/accompagnements/foutou igname.jpeg" },
+      { name: "Attiéké", description: "Semoule de manioc légèrement citronnée.", price: "1 000", image: "assets/accompagnements/attiéké.jpg" },
+      { name: "Alloco", description: "Bananes plantain dorées et fondantes.", price: "2 000", image: "assets/accompagnements/alloco.jpeg" },
+      { name: "Frites de pommes de terre", description: "Frites croustillantes préparées à la commande.", price: "1 000", image: "assets/accompagnements/frites de pomme de terres.jpeg" },
+      { name: "Frites de patates douces", description: "Patates douces dorées et croustillantes.", price: "1 000", image: "assets/accompagnements/frites de patates douces.jpeg" },
+      { name: "Frites d’igname", description: "Bâtonnets d’igname frits à la perfection.", price: "1 500", image: "assets/accompagnements/frites d'ignames.jpg" },
+      { name: "Bâtons de manioc", description: "Accompagnement de manioc traditionnel.", price: "1 000", image: "assets/accompagnements/baton de manioc.jpeg" },
+      { name: "Abolo", description: "Gâteau de maïs moelleux et légèrement sucré.", price: "1 000", image: "assets/accompagnements/abolo.jpeg" },
+      { name: "Akassa", description: "Pâte de maïs douce et légère.", price: "1 000", image: "assets/accompagnements/akassa.jpeg" },
+    ],
+  },
+  {
     category: "Boissons",
     items: [
       {
-        name: "Jus de bissap",
-        description: "Bissap frais, menthe et gingembre doux.",
+        name: "Coca-Cola",
+        description: "Boisson fraîche.",
         price: "1 000",
-        image: "assets/Jus de bissap.jpeg",
-        position: "50% 50%",
+        image: "assets/boissons/coca.jpeg",
       },
       {
-        name: "Gnamakoudji",
-        description: "Gingembre pressé, citron et sucre équilibré.",
+        name: "Fanta",
+        description: "Boisson fraîche.",
         price: "1 000",
-        image: "assets/Gnamakoudji.jpeg",
-        position: "50% 50%",
+        image: "assets/boissons/fanta.jpeg",
+      },
+      {
+        name: "Sprite",
+        description: "Boisson fraîche.",
+        price: "1 000",
+        image: "assets/boissons/sprite.jpeg",
+      },
+      {
+        name: "Bissap",
+        description: "Jus de bissap frais préparé maison.",
+        price: "1 000",
+        image: "assets/boissons/Jus de bissap.jpeg",
+      },
+      {
+        name: "Gingembre",
+        description: "Jus de gingembre frais et parfumé.",
+        price: "1 000",
+        image: "assets/boissons/jus de gingembre.jpeg",
+      },
+      {
+        name: "Passion",
+        description: "Jus de fruit de la passion frais.",
+        price: "1 500",
+        image: "assets/boissons/jus de passion.jpeg",
       },
     ],
   },
@@ -168,7 +259,7 @@ function renderMenu() {
               .map(
                 (item) => `
                   <article class="menu-card">
-                    <div class="dish-photo" style="${item.image ? `--image: url('${item.image}');` : ""} --pos: ${item.position}"></div>
+                    <div class="dish-photo" style="${item.image ? `--image: url('${item.image.replaceAll("'", "\\27 ")}');` : ""} --pos: ${item.position || "50% 50%"}"></div>
                     <div class="menu-card-content">
                       <strong class="price">${item.price}<small>FCFA</small></strong>
                       <h3 class="${["Placali gombo", "Choukouya attiéké demi"].includes(item.name) ? "text-white" : ""}">${item.name}</h3>

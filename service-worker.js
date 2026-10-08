@@ -1,4 +1,4 @@
-const CACHE_NAME = "la-case-ivoirienne-v20";
+const CACHE_NAME = "la-case-ivoirienne-v21";
 
 const FILES_TO_CACHE = [
   "/",
@@ -48,6 +48,11 @@ const FILES_TO_CACHE = [
   "/assets/poissons /thon frit.jpeg",
   "/assets/Attieke croupion de dinde_.jpeg",
   "/assets/Attiéké Poisson.jpeg",
+  "/assets/attiéképoulet.jpeg",
+  "/assets/boissons/jus de passion.jpeg",
+  "/assets/garba.jpeg",
+  "/assets/poisson braisé.jpeg",
+  "/assets/Volailles/poulet braisé.jpeg",
   "/assets/alloco.jpeg",
   "/assets/attiéképoulet.jpeg",
   "/assets/choukouya.jpeg",

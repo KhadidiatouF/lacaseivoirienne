@@ -211,8 +211,24 @@ const tabs = document.querySelector("#categoryTabs");
 const list = document.querySelector("#menuList");
 const menuToggle = document.querySelector("#menuToggle");
 const burgerMenu = document.querySelector("#burgerMenu");
+const heroSlides = [...document.querySelectorAll(".hero-slide")];
 
 let activeCategory = "Tout";
+let activeHeroSlide = 0;
+let heroTimer;
+
+function showNextHeroSlide() {
+  if (heroSlides.length < 2) return;
+  heroSlides[activeHeroSlide].classList.remove("is-active");
+  activeHeroSlide = (activeHeroSlide + 1) % heroSlides.length;
+  heroSlides[activeHeroSlide].classList.add("is-active");
+}
+
+function startHeroSlideshow() {
+  if (heroSlides.length < 2) return;
+  window.clearInterval(heroTimer);
+  heroTimer = window.setInterval(showNextHeroSlide, 6000);
+}
 
 function getFilteredMenu() {
   return menu.filter((section) => activeCategory === "Tout" || section.category === activeCategory);
@@ -311,6 +327,7 @@ document.addEventListener("click", (event) => {
 
 renderTabs();
 renderMenu();
+startHeroSlideshow();
 
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => {
